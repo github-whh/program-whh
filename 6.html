@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <form action="demo.php" method="POST" name="name1">
+    <form action = "xxx.php" method="GET">
         <!-- 表单域 -->
-       用户名:<input type="text">
-       密码:<input type="password">
+        用户名:<input type="text" name="username" value="请输入用户名" maxlength="6"><br>
+        密码:<input type="password name=" pwd" value="请输入密码值"><br>
+        <!-- name是单元素名字，必须要有相同的name值 -->
+        <!-- checked属性，默认网页打开时自动选择 -->
+        单选择按钮（性别）:男<input type="radio" name="sex" value="man" checked="checked"> 女 <input type="radio" name="sex"
+            value="woman"><br>
+        多选按钮 :吃饭<input type="checkbox" value="eat" checked="checked"> 睡觉 <input type="checkbox" value="sleep"> 打豆豆
+        <input type="checkbox" value="hit point"><br>
+        <input type="submit" value ="免费注册"><br>
+        <input type="reset" value="重新填写"><br>
+        <input type="button" value="获取短信验证码"><br>
+        上传图像: <input type="file">
     </form>
 </body>
+
 </html>
